@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to the game! Repeat the TV Show pattern to win the game!
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()"> 
+      Stop
+    </button>
+  
+    <audio src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2FgoodPlaceaud.mp3?v=1616454028819" id="goodPlaceaud"></audio>
+    <audio src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fb99aud.mp3?v=1616454022876" id="b99aud"></audio>
+    <audio src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fwanvisaud.mp3?v=1616452159014" id="wanvisaud"></audio>
+    <audio src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fnewgirlaud.mp3?v=1616464402955" id="newgirlaud"></audio>
+    <audio src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fparaud.mp3?v=1616454034569" id="paraud"></audio>
+    <audio src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Ffriendsaud.mp3?v=1616454025350" id="friendsaud"></audio>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="playMyAudio(1)" onmouseup="pauseMyAudio(1)">
+      <img src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2FgoodPlace.png?v=1616449522312" width="120" height="100">
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="playMyAudio(2)" onmouseup="pauseMyAudio(2)">
+      <img src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fb99.png?v=1616449514480" width="120" height="100">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="playMyAudio(3)" onmouseup="pauseMyAudio(3)">
+      <img src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fwanvis.jpg?v=1616449600236" width="120" height="100">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="playMyAudio(4)" onmouseup="pauseMyAudio(4)">
+      <img src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fnewgirl.jpg?v=1616449527113" width="120" height="100">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="playMyAudio(5)" onmouseup="pauseMyAudio(5)">
+      <img src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Fpar.png?v=1616450588892" width="120" height="100">
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="playMyAudio(6)" onmouseup="pauseMyAudio(6)">
+      <img src="https://cdn.glitch.com/bc36d35e-92f4-46a9-9cd9-755d63f2a8df%2Ffriends.png?v=1616451358022" width="121" height="100">
+      </button>
+    </div>  
+    
+  </body>
+</html>
